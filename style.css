@@ -1,0 +1,624 @@
+@font-face {
+    font-family: "roboto-regular";
+    src: url("./font/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: "flexo-thin";
+    src: url("/font/flexo_font/Flexo-Light.ttf");
+}
+
+* {
+    font-family: "roboto-regular";
+}
+
+body {
+    margin: -8px 0px;
+    overflow-x: hidden;
+}
+
+/* navbar pics styles */
+.navbarpics {
+    margin-top: -18px;
+    background-color: #f5f5f5;
+    border-bottom: solid 2px #dedede;
+    height: 80px;
+}
+
+.navbarpics ul {
+    display: inline-flex;
+    list-style-type: none;
+    padding-left: 125px;
+}
+
+#nav_pic_list1 {
+    width: 27%;
+    height: 60px;
+    padding-right: 0px;
+    vertical-align: middle;
+}
+
+#nav_pic_list1 li {
+    width: 100%;
+}
+
+#nav_pic_list2 {
+    margin-left: -10px;
+    padding-left: 0px;
+    width: 45%;
+    height: 63px;
+    vertical-align: middle;
+}
+
+#nav_pic_list2 li {
+    margin-left: 20px;
+}
+
+#nav_pic_list2 img {
+    margin-top: 8px;
+}
+
+#navpic1 {
+    box-shadow: 0 0 7px 1px #666666;
+    margin: 0 10px;
+    border-right: 0;
+    border-left: 0;
+    background-color: #fff;
+    padding: 5px;
+}
+
+#navpic2 {
+    border-right: 1px #666666 solid;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+#navpic3 {
+    border-right: 1px #666666 solid;
+    padding: 5px;
+    padding-right: 15px;
+    margin-right: 10px;
+}
+
+/* navbar title styles */
+.navtitle {
+    height: 10.6vh;
+    width: 100vw;
+    border-bottom: 2px solid #f0f0f0;
+}
+
+.navtitle ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+.navtitle li {
+    height: 9.5vh;
+    margin-top: -2.3vh;
+    padding-top: 3.5vh;
+    display: flex;
+    justify-content: center;
+}
+
+.navtitle a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+.navtitle span {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navtitle li:hover span {
+    color: white;
+}
+
+#nav_home {
+    width: 10vw;
+    border-bottom: #919191 0.6vw solid;
+    border-bottom-left-radius: 0.5vw;
+}
+
+#nav_home:hover {
+    background-color: #919191;
+}
+
+#nav_home:hover .img-span img {
+    content: url("./assets/home-icon-after.png");
+}
+
+#nav_poke {
+    width: 10vw;
+    border-bottom: #E3350D 0.6vw solid;
+}
+
+#nav_poke:hover {
+    background-color: #E3350D;
+}
+
+#nav_poke:hover .img-span img {
+    content: url("./assets/pokedex-icon-after.png");
+}
+
+#nav_video {
+    width: 10vw;
+    border-bottom: #ee6b2f 0.6vw solid;
+}
+
+#nav_video:hover {
+    background-color: #ee6b2f;
+}
+
+#nav_video:hover .img-span img {
+    content: url("./assets/app\ &\ games\ icon-after.png");
+}
+
+#nav_card {
+    width: 10vw;
+    border-bottom: #e6bc2f 0.6vw solid;
+}
+
+#nav_card:hover {
+    background-color: #e6bc2f;
+}
+
+#nav_card:hover .img-span img {
+    content: url("./assets/trading card icon after.png");
+}
+
+#nav_tv {
+    width: 10vw;
+    border-bottom: #4dad5b 0.6vw solid;
+}
+
+#nav_tv:hover {
+    background-color: #4dad5b;
+}
+
+#nav_tv:hover .img-span img {
+    content: url("./assets/pokemon tv icon-after.png");
+}
+
+#nav_play {
+    width: 10vw;
+    border-bottom: #30a7d7 0.6vw solid;
+}
+
+#nav_play:hover {
+    background-color: #30a7d7;
+}
+
+#nav_play:hover .img-span img {
+    content: url("./assets/play pokemon event icon-after.png");
+}
+
+#nav_news {
+    width: 10vw;
+    margin-right: -27.5%;
+    border-bottom: #1b53ba 0.6vw solid;
+    border-bottom-right-radius: 0.5vw;
+}
+
+#nav_news:hover {
+    background-color: #1b53ba;
+}
+
+#nav_news:hover .img-span img {
+    content: url("/assets/news icon-after.png");
+}
+
+.bannerimg {
+    background-color: #666666ed;
+    padding-left: 2vw;
+}
+.bannerimg img {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    width: 100vw;
+}
+.banner {
+    position: relative;
+}
+
+.bannerbuttions {
+    z-index: 10;
+    position: absolute;
+    top: -35px;
+}
+
+.bannerbuttions ul {
+    display: inline-block;
+    list-style-type: none;
+    border: 2px solid black;
+    border-top-right-radius: 20px;
+    border-left: none;
+    width: 25px;
+}
+
+#bannerbuttn1 img {
+    width: 30px;
+}
+
+#bannerbuttn1 {
+    margin-left: -50px;
+    padding-top: 35px;
+    background-color: #54b564;
+    border-top-right-radius: 20px;
+    padding-bottom: 40px;
+}
+
+#bannerbuttn1:hover {
+    background-color: #369143;
+}
+
+#bannerbuttn1 a {
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.bannerbuttions span {
+    display: block;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#bannerbuttn2 {
+    margin-left: -40px;
+    padding-top: 25px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    height: 40px;
+    background-color: #666666;
+}
+
+#bannerbuttn2 img {
+    width: 25px;
+}
+
+.bannerbuttions {
+    position: fixed;
+    top: 22%;
+}
+
+.main {
+    display: inline-flex;
+    padding: 0px 7vw;
+    background-image: url("./assets/background img.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100vw;
+}
+
+.content,
+.playstore {
+    background-color: white;
+    width: 47vw;
+    z-index: 1;
+}
+
+.content {
+    padding: 20px 25px;
+    border-bottom-left-radius: 25px;
+}
+
+.playstore {
+    border-bottom-right-radius: 25px;
+    width: 28vw;
+}
+
+.contentstart h1 {
+    font-family: "flexo-thin";
+    opacity: 0.8;
+}
+
+.contentstart img {
+    width: 50vw;
+    margin: auto;
+    display: flex;
+}
+
+.contentstart #first_letter::first-letter {
+    float: left;
+    font-size: 550%;
+    font-weight: 700;
+    line-height: 80%;
+    color: #30a7d7;
+    margin: 0px 5px -5px 0px;
+}
+
+.content p {
+    opacity: 0.7;
+    letter-spacing: 0.5px;
+    word-spacing: 3px;
+}
+
+.contentcontainer h1 {
+    padding-bottom: 3px;
+    border-bottom: 3px solid #30A7D7;
+    margin-bottom: 16px;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.contentcontainer img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+#img_2 {
+    width: 30%;
+    margin: auto;
+    display: flex;
+}
+
+.playstore {
+    padding-left: 3.2vw;
+    padding-top: 10px;
+}
+
+.playstore_button button {
+    background-color: #30a7d7;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    vertical-align: middle;
+    text-align: center;
+    text-transform: none;
+    font-family: "Flexo-Demi", arial, sans-serif;
+    font-size: 105%;
+    margin-top: 5vh;
+    height: 7vh;
+    width: 25vw;
+}
+
+.playstore_button button:hover {
+    background-color: #1b82b1;
+}
+
+.playstore_img1 img,
+.playstore_img2 img {
+    width: 24.5vw;
+    margin-top: 2vh;
+}
+
+.playstore_img1,
+.playstore_img2 {
+    width: 25vw;
+    padding-left: 1px;
+    transition: transform 0.1s;
+}
+
+.playstore_img1:hover,
+.playstore_img2:hover {
+    transform: translateY(-3px);
+}
+
+.playstore_img1 p,
+.playstore_img2 p {
+    margin-top: -2vh;
+    width: 20.4vw;
+    padding: 2vw 2vw;
+    color: #919191;
+    background-color: #F2F2F2;
+}
+
+.playstore_img1:hover p,
+.playstore_img2:hover p {
+    background: lightgray;
+}
+
+.content a {
+    text-decoration: none;
+    color: #1b53ba;
+}
+
+.content a:hover {
+    color: #30a7d7;
+}
+
+#copyright_para_1 {
+    font-family: "Roboto", arial, sans-serif;
+    font-size: 15px;
+    margin-bottom: 0.75em;
+    opacity: 0.7;
+    line-height: 23px;
+    word-spacing: 1px;
+}
+
+#copyright_para_2 {
+    font-family: "Roboto", arial, sans-serif;
+    font-size: 14px;
+    line-height: 23px;
+    word-spacing: 1px;
+    padding: 5px 10px;
+    opacity: 0.6;
+}
+
+.footer_diverder {
+    height: 5vh;
+    background: #2f2f2f;
+    opacity: 0.8;
+    margin-top: -1vh;
+}
+
+.div-footer-1,
+.div-footer-2,
+.div-footer-3 {
+    float: left;
+    width: 27.46%;
+    border-right: 2px solid #000;
+    margin-top: 1.75em;
+}
+
+.footer {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-content: center;
+    background-color: #0d0d0def;
+    opacity: 0.9;
+    padding-bottom: 2vh;
+}
+
+.footer a,
+h2 {
+    text-decoration: none;
+    color: white;
+    display: flex;
+}
+
+.footer h2 {
+    justify-content: center;
+    margin-left: -8.5vw;
+}
+
+.footer ul {
+    list-style-type: none;
+    padding-left: 0vw;
+}
+
+.footer li {
+    line-height: 4vh;
+}
+
+.div-footer-3 h2 {
+    margin-left: -8vw;
+}
+
+.div-footer-2 {
+    display: flex;
+    justify-content: center;
+}
+
+.div-footer-2 img {
+    width: 3vw;
+    height: 5vh;
+    margin: 1vh 0.5vw;
+}
+
+#facebook_logo {
+    width: 5vw;
+    height: 9vh;
+    margin-top: -1vh;
+    margin-right: -0.5vw;
+}
+
+.div-footer-3 {
+    border-right: none;
+}
+.div-footer-3 ul {
+    padding-left: 3.5vw;
+}
+.div-footer-3 p {
+    color: white;
+    width: 20vw;
+    margin-left: 3.5vw;
+    font-size: 12px;
+}
+
+.div-footer-3 img {
+    padding-left: 3.5vw;
+}
+
+@media (min-width:500px) and (max-width:960px) {
+    body{
+        overflow-x: hidden;
+    }
+    .main {
+        display: block;
+    }
+
+    .content {
+        width: 82vw;
+        border-bottom-left-radius: 0px;
+    }
+
+    .playstore {
+        width: 84vw;
+    }
+
+    .playstore_button button {
+        width: 50vw;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .playstore_img1 {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .playstore_img1 img {
+        width: 50vw;
+    }
+    .playstore_img1 p{
+        width: 46vw;
+    }
+    .playstore_img2 {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .playstore_img2 img {
+        width: 50vw;
+    }
+    .playstore_img2 p{
+        width: 46vw;
+    }
+    .navtitle {
+        height: 13vh;
+        width: 100vw;
+    }
+    .bannerimg img {
+        width: 155vw;
+    }
+    .footer {
+        display: grid;
+    }
+    .div-footer-1, .div-footer-2 {
+        border-right: none;
+        border-bottom: 2px solid #000;
+        width: 90vw;
+    }
+    .div-footer-1 h2 {
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 4vw;
+    }
+    .div-footer-1 ul{
+        margin-left: 5vw;
+    }
+    .div-footer-2 {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 3.5vw;
+    }
+
+    .div-footer-3 {
+        padding-left: 2vw;
+    }
+
+    .div-footer-3 img {
+        padding-left: -3.5vw;
+    }
+    .bannerbuttions {
+        display: none;
+    }
+}
