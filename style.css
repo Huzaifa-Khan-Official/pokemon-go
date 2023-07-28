@@ -220,12 +220,14 @@ body {
     background-color: #666666ed;
     padding-left: 2vw;
 }
+
 .bannerimg img {
     display: flex;
     margin: auto;
     justify-content: center;
     width: 100vw;
 }
+
 .banner {
     position: relative;
 }
@@ -520,9 +522,11 @@ h2 {
 .div-footer-3 {
     border-right: none;
 }
+
 .div-footer-3 ul {
     padding-left: 3.5vw;
 }
+
 .div-footer-3 p {
     color: white;
     width: 20vw;
@@ -534,12 +538,14 @@ h2 {
     padding-left: 3.5vw;
 }
 
-@media (min-width:500px) and (max-width:960px) {
-    body{
+@media (min-width:200px) and (max-width:960px) {
+    body {
         overflow-x: hidden;
     }
+
     .main {
         display: block;
+        width: 88vw;
     }
 
     .content {
@@ -558,53 +564,68 @@ h2 {
         justify-content: center;
         align-items: center;
     }
+
     .playstore_img1 {
         display: grid;
         justify-content: center;
         align-items: center;
         margin: auto;
     }
+
     .playstore_img1 img {
         width: 50vw;
     }
-    .playstore_img1 p{
+
+    .playstore_img1 p {
         width: 46vw;
     }
+
     .playstore_img2 {
         display: grid;
         justify-content: center;
         align-items: center;
         margin: auto;
     }
+
     .playstore_img2 img {
         width: 50vw;
     }
-    .playstore_img2 p{
+
+    .playstore_img2 p {
         width: 46vw;
     }
+
     .navtitle {
         height: 13vh;
         width: 100vw;
     }
+
     .bannerimg img {
-        width: 155vw;
+        width: 100vw;
+        content: url("./assets/bannerimgafter.png")
     }
+
     .footer {
         display: grid;
     }
-    .div-footer-1, .div-footer-2 {
+
+    .div-footer-1,
+    .div-footer-2 {
         border-right: none;
         border-bottom: 2px solid #000;
         width: 90vw;
     }
+
     .div-footer-1 h2 {
         display: flex;
         justify-content: flex-start;
         margin-left: 4vw;
     }
-    .div-footer-1 ul{
+
+    .div-footer-1 ul {
         margin-left: 5vw;
     }
+
     .div-footer-2 {
         display: flex;
         justify-content: flex-start;
@@ -618,7 +639,20 @@ h2 {
     .div-footer-3 img {
         padding-left: -3.5vw;
     }
+
     .bannerbuttions {
         display: none;
+    }
+    #nav_pic_list2 {
+        display: none;
+    }
+    .navbarpics {
+        display: flex;
+        justify-content: center;
+    }
+
+    #nav_pic_list1 {
+        display: flex;
+        justify-content: flex-end;
     }
 }
