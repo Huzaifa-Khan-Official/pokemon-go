@@ -554,7 +554,12 @@ h2 {
     }
 
     .playstore {
-        width: 84vw;
+        width: 87vw;
+        position: relative;
+        z-index: 10;
+        border-bottom-left-radius: 25px;
+        margin-top: 2vh;
+        padding-top: 5vh;
     }
 
     .playstore_button button {
@@ -643,9 +648,11 @@ h2 {
     .bannerbuttions {
         display: none;
     }
+
     #nav_pic_list2 {
         display: none;
     }
+
     .navbarpics {
         display: flex;
         justify-content: center;
